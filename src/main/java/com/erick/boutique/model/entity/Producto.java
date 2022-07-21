@@ -32,19 +32,14 @@ public class Producto {
     @Column(name = "precio")
     private int precio;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-    @JoinColumn(name = "idCategoria")
-    private Categoria idcategoria;
+    @Column
+    private String categoria;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-    @JoinColumn(name = "idTalla")
-    private Talla idTalla;
+    @Column
+    private String talla;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-    @JoinColumn(name = "idGenero")
-    private Genero idGenero;
+    @Column
+    private String genero;
+
 }
 

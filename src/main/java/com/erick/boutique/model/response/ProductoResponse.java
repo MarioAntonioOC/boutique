@@ -1,8 +1,5 @@
 package com.erick.boutique.model.response;
 
-import com.erick.boutique.model.entity.Categoria;
-import com.erick.boutique.model.entity.Genero;
-import com.erick.boutique.model.entity.Talla;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -20,9 +17,9 @@ public class ProductoResponse {
 
     private int precio;
 
-    private Categoria idcategoria;
+    private String categoria;
 
-    private Talla idTalla;
+    private String  talla;
 
-    private Genero idGenero;
+    private String genero;
 }
